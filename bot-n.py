@@ -18,7 +18,8 @@ class Name(Field):
 
 class Phone(Field):
     def __init__(self, value):
-        self._value = value
+        self.__value = None
+        self.value = value
 
     @property
     def value(self):
@@ -31,7 +32,8 @@ class Phone(Field):
 
 class Birthday(Field):
     def __init__(self, value):
-        self._value = value
+        self.__value = None
+        self.value = value
 
     @property
     def value(self):
